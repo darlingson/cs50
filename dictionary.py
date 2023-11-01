@@ -1,6 +1,18 @@
+words = set()
+
 def check(word):
-    pass
+    if word.lower() in words:
+        return True
+    else:
+        return False
+def load(dictionary):
+    file = open(dictionary,"r")
+    for line in file:
+        word = line.rstrip()
+        words.add
+    return True
 def size():
-    pass
+    return len(words)
 def unload():
-    pass
+    return True
+
